@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="false">
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/appbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                android:fitsSystemWindows="true">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/event_class_image"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@android:drawable/sym_def_app_icon"
+                        app:civ_border_width="0dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:id="@+id/detail_event_title_text"
+                        android:textSize="30sp"
+                        android:layout_toRightOf="@+id/event_class_image"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+
+            </android.support.design.widget.AppBarLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical" android:layout_width="match_parent"
+                xmlns:map="http://schemas.android.com/apk/res-auto"
+                android:paddingTop="20dp"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/master_text"
+                        android:textSize="20sp"
+                        android:text="主揪:"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <ImageView
+                        android:id="@+id/master"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/detail_date"
+                        android:textSize="20sp"
+                        android:text="日期: "
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:id="@+id/detail_date_text"
+                        android:textSize="20sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <LinearLayout
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/detail_time"
+                        android:text="時間: "
+                        android:textSize="20sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:id="@+id/detail_time_text"
+                        android:textSize="20sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <LinearLayout
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/detail_location"
+                        android:text="地點: "
+                        android:textSize="20sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:id="@+id/detail_location_text"
+                        android:textSize="20sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/detail_number"
+                        android:text="目前人數: "
+                        android:textSize="20sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:id="@+id/detail_number_text"
+                        android:textSize="20sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <LinearLayout
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/detail_detail"
+                        android:textSize="20sp"
+                        android:text="內文: "
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:id="@+id/detail_detail_text"
+                        android:textSize="20sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_height="300dp">
+                    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:map="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/map"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:name="com.google.android.gms.maps.SupportMapFragment"
+                        />
+                </FrameLayout>
+
+
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            app:layout_anchor="@id/appbar"
+            app:layout_anchorGravity="bottom|right|end"
+            android:src="@drawable/ic_plus_one_white_48dp"
+            android:id="@+id/fab_plus_one"
+            android:layout_margin="@dimen/fab_margin"
+            android:clickable="true"/>
+    </android.support.design.widget.CoordinatorLayout>
+
+</ScrollView>

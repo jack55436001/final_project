@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <PreferenceCategory
+        android:title="通知項目">
+
+        <SwitchPreference
+            android:defaultValue="@string/pref_new_event_notifications_default"
+            android:key="@string/pref_new_event_notifications_key"
+            android:title="@string/pref_new_event_notifications_label" />
+
+        <SwitchPreference
+            android:defaultValue="@string/notifications_default"
+            android:key="@string/notifications_key"
+            android:title="@string/notifications_label" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="音效與震動">
+
+        <SwitchPreference
+            android:defaultValue="@string/music_default"
+            android:key="@string/music_key"
+            android:title="@string/music_label" />
+
+        <SwitchPreference
+            android:defaultValue="@string/vibrate_default"
+            android:key="@string/vibrate_key"
+            android:title="@string/vibrate_label" />
+
+    </PreferenceCategory>
+
+
+
+
+
+
+</PreferenceScreen>

@@ -1,0 +1,43 @@
+﻿<resources>
+    <string name="app_name">94i揪團</string>
+    <string name="facebook_app_id">1022282617860039</string>
+    <string name="google_app_id">AIzaSyCSeWbLQR3-rIFL8bdWCazUdno0dK8Gr3c</string>
+    <string name="title_activity_splash">揪團囉</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_logout">Logout</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="search_title">search</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="calendar_date_picker_result_values">%1$s / %2$s / %3$s</string>
+    <string name="radial_time_picker_result_value">%1$s:%2$s</string>
+    <string name="set_number">%1$d / %2$d</string>
+    <string name="calendar_date_picker_set">設定日期</string>
+    <string name="radial_time_picker">設定時間</string>
+    <string name="place_picker_set">設定地點</string>
+
+
+
+
+    <string name="pref_new_event_notifications_key" translatable="false">enable_notifications</string>
+    <string name="pref_new_event_notifications_label">新活動</string>
+    <string name="pref_new_event_notifications_default" translatable="false">true</string>
+
+    <string name="notifications_key" translatable="false">notifications</string>
+    <string name="notifications_label">活動提醒</string>
+    <string name="notifications_default" translatable="false">true</string>
+
+    <string name="music_key" translatable="false">music</string>
+    <string name="music_label">通知音效</string>
+    <string name="music_default" translatable="false">true</string>
+
+    <string name="vibrate_key" translatable="false">vibrate</string>
+    <string name="vibrate_label">通知震動</string>
+    <string name="vibrate_default" translatable="false">true</string>
+
+
+</resources>
+
+

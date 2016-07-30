@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="56dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical">
+        <include
+            layout="@layout/title_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <include
+            layout="@layout/add_date"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <include
+            layout="@layout/add_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <include
+            layout="@layout/add_place"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <include
+            layout="@layout/add_min_number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <include
+            layout="@layout/add_max_number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <include
+            layout="@layout/class_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <include
+            layout="@layout/detail_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/create_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:padding="12dp"
+            android:text="創建揪團"
+            />
+    </LinearLayout>
+</ScrollView>

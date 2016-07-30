@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="分類">
+        <menu>
+            <group
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_all"
+                    android:icon="@drawable/ic_assignment_black_24dp"
+                    android:title="全部" />
+                <item
+                    android:id="@+id/nav_eat"
+                    android:icon="@drawable/ic_restaurant_black_24dp"
+                    android:title="吃吃喝喝" />
+                <item
+                    android:id="@+id/nav_singing"
+                    android:icon="@drawable/ic_music_note_black_24dp"
+                    android:title="唱歌" />
+                <item
+                    android:id="@+id/nav_party"
+                    android:icon="@drawable/ic_local_bar_black_24dp"
+                    android:title="派對" />
+                <item
+                    android:id="@+id/nav_sport"
+                    android:icon="@drawable/ic_directions_bike_black_24dp"
+                    android:title="運動" />
+                <item
+                    android:id="@+id/nav_movie"
+                    android:icon="@drawable/ic_local_movies_black_24dp"
+                    android:title="電影" />
+                <item
+                    android:id="@+id/nav_game"
+                    android:icon="@drawable/ic_casino_black_24dp"
+                    android:title="桌遊" />
+                <item
+                    android:id="@+id/nav_travel"
+                    android:icon="@drawable/ic_flight_black_24dp"
+                    android:title="旅遊" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="帳號">
+        <menu>
+            <item
+                android:id="@+id/nav_setting"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="設定" />
+            <item
+                android:id="@+id/nav_info"
+                android:icon="@drawable/ic_info_outline_black_24dp"
+                android:title="關於開發者"
+                />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_exit_to_app_black_24dp"
+                android:title="登出" />
+        </menu>
+    </item>
+
+</menu>
